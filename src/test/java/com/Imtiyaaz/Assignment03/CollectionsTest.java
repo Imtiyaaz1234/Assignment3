@@ -10,37 +10,37 @@ public class CollectionsTest extends TestCase
 {
     Collections collectionsObj = new Collections();
     public void testSetVehicle() throws Exception {
-        collectionsObj.setVehicle("Ferrari","458 Italia",2015);
-        Assert.assertEquals(collectionsObj.getMake()+collectionsObj.getModel() + collectionsObj.getYear(),"Ferrari" +"458 Italia" + 2015);
+        collectionsObj.setVehicle("Toyota","458 Corolla",1996);
+        Assert.assertEquals(collectionsObj.getMake()+collectionsObj.getModel() + collectionsObj.getYear(),"Toyota" +"Corolla" + 1996);
     }
 
     public void testSetMake() throws Exception {
-        collectionsObj.setMake("BMW");
-        Assert.assertEquals("BMW","BMW");
+        collectionsObj.setMake("Golf");
+        Assert.assertEquals("Golf","Golf");
     }
 
     public void testSetModel() throws Exception {
-        collectionsObj.setModel("M4");
-        Assert.assertEquals("M4","M4");
+        collectionsObj.setModel("G7");
+        Assert.assertEquals("G7","G7");
     }
 
     public void testSetYear() throws Exception {
-        collectionsObj.setYear(2015);
-        Assert.assertEquals(2015, 2015);
+        collectionsObj.setYear(2016);
+        Assert.assertEquals(2015, 2016);
     }
 
     public void testGetMake() throws Exception {
-        collectionsObj.setMake("BMW");
-        Assert.assertEquals("BMW", collectionsObj.getMake());
+        collectionsObj.setMake("Golf");
+        Assert.assertEquals("Golf", collectionsObj.getMake());
     }
 
     public void testGetYear() throws Exception {
-        collectionsObj.setYear(2015);
-        Assert.assertEquals(2015,collectionsObj.getYear());
+        collectionsObj.setYear(2016);
+        Assert.assertEquals(2016,collectionsObj.getYear());
     }
 
     public void testGetModel() throws Exception {
-        collectionsObj.setModel("M4");
-        Assert.assertEquals("M4", collectionsObj.getModel());
+        collectionsObj.setModel("G7");
+        Assert.assertEquals("G7", collectionsObj.getModel());
     }
 }
