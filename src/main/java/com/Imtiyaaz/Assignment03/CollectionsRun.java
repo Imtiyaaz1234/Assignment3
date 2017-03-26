@@ -10,7 +10,7 @@ public class CollectionsRun {
         ArrayList<String> cars = new ArrayList<String>();
         HashSet<String> setAb = new HashSet<String>();
         HashMap<String, String> mapA = new HashMap<String, String>();
-        Collection<String> vehicles = new HashSet<String>();
+        Collection<String> vehiclesAb = new HashSet<String>();
 
 
         Collections carsObject = new Collections();
@@ -55,12 +55,12 @@ public class CollectionsRun {
         mapElements[3] = (String) mapA.get("4");
 
 
-        vehicles.add(carsObject2.toString());
-        vehicles.add(bikeObject3.toString());
-        vehicles.add(carsObject3.toString());
-        vehicles.add(bikeObject4.toString());
-        vehicles.add(carsObject4.toString());
-        vehicles.toArray();
+        vehiclesAb.add(carsObject2.toString());
+        vehiclesAb.add(bikeObject3.toString());
+        vehiclesAb.add(carsObject3.toString());
+        vehiclesAb.add(bikeObject4.toString());
+        vehiclesAb.add(carsObject4.toString());
+        vehiclesAb.toArray();
         System.out.println("This is an ArrayList collection");
         for( int i = 0; i < cars.size(); i++)
         {
