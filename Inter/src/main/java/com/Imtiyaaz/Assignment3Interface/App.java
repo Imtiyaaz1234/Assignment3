@@ -1,13 +1,18 @@
 package com.Imtiyaaz.Assignment3Interface;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * Hello world!
  *
  */
+@Configuration
 public class App 
 {
-    public static void main( String[] args )
+    @Bean(name = "cal")
+    public Calculator getService()
     {
-        System.out.println( "Hello World!" );
+        return new CalculatorCode();
     }
+
 }
